@@ -58,7 +58,7 @@ a{
 }
 
 .portada{
-    background-image: url(/img/portada1.png);
+    background-image: url(./img/portada1.png);
     height: 40rem;
     width: 100%;
     background-size: cover;
