@@ -1,120 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+
     <title>Document</title>
 </head>
+
 <body>
-<header class="encabezado">
-    <nav class="navbar">
-        <div class="logoConteiner">
-            <img class="logo" src="./img/LogoBits1.png"> 
-                <p class="nombreEncabezado">BITS3D2</p>
-        </div>
+    <header class="encabezado">
+        <nav class="navbar">
+            <div class="logoConteiner">
+                <img class="logo" src="./img/LogoBits1.png">
+                <p class="nombreEncabezado">BITS3D</p>
+            </div>
             <ul class="listaMenu">
-                <li>Productos</li>
-                    <li>Acerca de</li>
-                        <li>!Contáctanos!</li>
-                            
+                <li><a href="#galeria">Productos</a></li>
+                <li><a href="#info">Acerca de</a></li>
+                <li><a href="#formulario">!Contáctanos!</a></li>
+
             </ul>
-    </nav>
-    <div class="portada">
+            <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+                <div class="bg-dark p-4">
+                    <h5 class="text-body-emphasis h4">Collapsed content</h5>
+                    <span class="text-body-secondary">Toggleable via the navbar brand.</span>
+                </div>
 
-    </div>
-  </header> 
 
-  <Main>
-    <article class="info">
-        <h2 class="titulo">¿Quienes somos?</h2> 
-                <p class="infoParrafo">Nuestro emprendimiento de impresión 3D se dedica a 
+
+        </nav>
+        <nav class="menu-mobile navbar  fixed-top">
+            <div class="container-fluid menu-mobile">
+                <a class="navbar-brand dark" href="#">BITS3D</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="menu-mobile offcanvas offcanvas-end text-bg" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#galeria">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#info">Acerca de
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#formulario">!Contáctanos!
+                                </a>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="portada">
+
+
+        </div>
+    </header>
+
+    <Main>
+        <article id="info"class="info">
+            <h2 class="titulo">¿Quienes somos?</h2>
+            <p class="infoParrafo">Nuestro emprendimiento de impresión 3D se dedica a
                 ideas en objetos reales, combinando creatividad, tecnología e innovación.
                 A través de la fabricación aditiva, logramos producir piezas personalizadas
                 con gran precisión, reduciendo costos y tiempos de producción en comparación
                 con los métodos tradicionales.</p>
-            
-                    <h6 class="subtitulo">Ofrecemos una amplia variedad de servicios:</h6>
+
+            <h6 class="subtitulo">Ofrecemos una amplia variedad de servicios:</h6>
             <ul class="infoLista">
                 <li>Diseño y modelado 3D: creamos desde cero los proyectos que nuestros clientes imaginan.</li>
-                    <li>Impresión de prototipos: ideal para estudiantes, diseñadores e ingenieros que necesitan validar ideas rápidamente</li>
-                        <li>roductos personalizados: llaveros, figuras, accesorios y piezas únicas hechas a medida. </li>
-                            <li>Repuestos y soluciones prácticas: fabricación de componentes difíciles de conseguir en el mercado.</li>
+                <li>Impresión de prototipos: ideal para estudiantes, diseñadores e ingenieros que necesitan validar
+                    ideas rápidamente</li>
+                <li>roductos personalizados: llaveros, figuras, accesorios y piezas únicas hechas a medida. </li>
+                <li>Repuestos y soluciones prácticas: fabricación de componentes difíciles de conseguir en el mercado.
+                </li>
             </ul>
-  
-    <footer class="infoParrafo">
-        Trabajamos con distintos materiales plásticos como PLA, ABS y PETG, adaptando la resistencia, el acabado y el color a las necesidades del cliente.
-        Nuestro valor agregado es la personalización, la rapidez y el acompañamiento en cada etapa del proyecto, asegurando que cada producto final no solo 
-        cumpla una función práctica, sino que también refleje la identidad y creatividad de quien lo encarga.
-        En definitiva, nuestro emprendimiento convierte una simple idea en un objeto tangible, acercando la tecnología de impresión 3D a todos: desde empresas
-         y comercios hasta hogares que buscan soluciones originales y personalizadas.
-    </footer>
-    </article>
-</Main>
-<section class="galeria">
-    
+
+            <footer class="infoParrafo">
+                Trabajamos con distintos materiales plásticos como PLA, ABS y PETG, adaptando la resistencia, el acabado
+                y el color a las necesidades del cliente.
+                Nuestro valor agregado es la personalización, la rapidez y el acompañamiento en cada etapa del proyecto,
+                asegurando que cada producto final no solo
+                cumpla una función práctica, sino que también refleje la identidad y creatividad de quien lo encarga.
+                En definitiva, nuestro emprendimiento convierte una simple idea en un objeto tangible, acercando la
+                tecnología de impresión 3D a todos: desde empresas
+                y comercios hasta hogares que buscan soluciones originales y personalizadas.
+            </footer>
+        </article>
+    </Main>
+    <section id="galeria"class="galeria">
+
         <div class="itemFoto">
             <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
-                <span>vasos</span>
-            </div>
-            <div class="itemFoto">
-                <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
-                    <span>llaveros</span>
-                </div><div class="itemFoto">
-                    <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
-                        <span>juguetes</span>
-                    </div><div class="itemFoto">
-                        <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
-                            <span>herramientas</span>
-                        </div><div class="itemFoto">
-                            <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
-                                <span>macetas</span>
-                            </div><div class="itemFoto">
-                                <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
-                                    <span>figuras</span>
-                                </div><div class="itemFoto">
-                                    <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
-                                        <span>lamparas</span>
-                                    </div><div class="itemFoto">
-                                        <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
-                                            <span>carteles</span>
-                                        </div><div class="itemFoto">
-                                            <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
-                                                <span>juegos</span>
-                                            </div>
-</section>
-<section class="sectionFormulario">
-    <h5 class="tituloContacto">¡Contáctanos!</h5>
-    <form action="" class="formulario">
-        <label for="" class="label">Nombre/s</label>
+            <span>vasos</span>
+        </div>
+        <div class="itemFoto">
+            <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
+            <span>llaveros</span>
+        </div>
+        <div class="itemFoto">
+            <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
+            <span>juguetes</span>
+        </div>
+        <div class="itemFoto">
+            <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
+            <span>herramientas</span>
+        </div>
+        <div class="itemFoto">
+            <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
+            <span>macetas</span>
+        </div>
+        <div class="itemFoto">
+            <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
+            <span>figuras</span>
+        </div>
+        <div class="itemFoto">
+            <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
+            <span>lamparas</span>
+        </div>
+        <div class="itemFoto">
+            <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
+            <span>carteles</span>
+        </div>
+        <div class="itemFoto">
+            <img src="./img/Captura de pantalla 2025-10-05 181109.png" alt="">
+            <span>juegos</span>
+        </div>
+    </section>
+    <section id="formulario" class="sectionFormulario">
+        <h5 class="tituloContacto">¡Contáctanos!</h5>
+        <form action="" class="formulario">
+            <label for="" class="label">Nombre/s</label>
             <input type="text">
-                <label for="" class="label">Apellido/s</label>
-                    <input type="text">
-                        <label for="" class="label">Email</label>
-                            <input type="email">
-                        <label for="" class="label">Consulta</label>
-                    <textarea name="" class="msj"></textarea>
-                <button class="btn">Enviar</button>
-                </form>
-</section>
+            <label for="" class="label">Apellido/s</label>
+            <input type="text">
+            <label for="" class="label">Email</label>
+            <input type="email">
+            <label for="" class="label">Consulta</label>
+            <textarea name="" class="msj"></textarea>
+            <button class="btn">Enviar</button>
+        </form>
+    </section>
 
-<footer class="footer">
-    <p>© 2025  CODERHOUSE</p>
-    <div class="grupoIconos">
-        <a href="#">
-            <img class="redIcono" src="img/instagram_1400503 (1).png" alt="">
-        </a>
-                <a href="#">  
-                    <img class="redIcono" src="img/facebook_1384085.png" alt="">
-                </a>
-                        <a href="#">
-                            <img class="redIcono" src="img/whatsapp_2111774.png" alt="">
-                        </a>
-                        
-    </div>
+    <footer class="footer">
+        <p>© 2025 CODERHOUSE</p>
+        <div class="grupoIconos">
+            <a href="#">
+                <img class="redIcono" src="img/instagram_1400503 (1).png" alt="">
+            </a>
+            <a href="#">
+                <img class="redIcono" src="img/facebook_1384085.png" alt="">
+            </a>
+            <a href="#">
+                <img class="redIcono" src="img/whatsapp_2111774.png" alt="">
+            </a>
 
-</footer>
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
