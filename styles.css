@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 3rem;
+  background-color: gold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  font-weight: 400;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar .logoConteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  min-width: 6rem;
+}
+.navbar .nombreEncabezado {
+  margin-bottom: 0;
+}
+.navbar .logo {
+  height: 100%;
+  width: auto;
+  padding-right: 1rem;
+}
+
+.listaMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 25rem;
+  list-style: none;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.listaMenu li:hover {
+  color: rgb(245, 245, 245);
+}
+
+.portada {
+  background-image: url("./img/portada1.png");
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+}
+
+.titulo {
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 2rem;
+}
+
+.info {
+  background-color: #fff;
+  padding: 1rem 0 6rem 0;
+}
+.info .infoParrafo {
+  padding: 1rem 4rem;
+  font-size: 1.3rem;
+}
+.info .subtitulo {
+  width: 80%;
+  padding-left: 4rem;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.info .infoLista {
+  padding-left: 6rem;
+  font-size: 1.1rem;
+}
+
+.btn-productos {
+  color: gold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  animation: mover 3s ease-in-out infinite alternate;
+}
+@keyframes mover {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.tituloProductos {
+  text-align: center;
+  padding: 2rem;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 6rem;
+  align-items: center;
+  justify-content: center;
+  min-width: 1vw;
+  background-color: #fff;
+}
+.galeria .itemFoto {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  color: white;
+  font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  text-align: end;
+}
+.galeria .itemFoto span {
+  padding: 2rem;
+}
+@media (max-width: 1280px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.sectionFormulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.sectionFormulario .tituloContacto {
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  background-color: #fff;
+  color: black;
+  padding: 2rem;
+  width: 100%;
+}
+.sectionFormulario .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  background-color: #fff;
+  padding: 25px;
+  height: 30rem;
+  border-radius: 5px;
+  margin-bottom: 10rem;
+  align-items: flex-start;
+  margin-top: 5rem;
+}
+.sectionFormulario .formulario .label {
+  width: auto;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: start;
+  justify-content: start;
+}
+.sectionFormulario .formulario input, .sectionFormulario .formulario .msj {
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.501);
+  border-radius: 5px;
+  font-size: larger;
+  margin-bottom: 20px;
+}
+.sectionFormulario .formulario input {
+  height: 3rem;
+}
+.sectionFormulario .formulario .msj {
+  min-height: 6rem;
+  margin-bottom: 2rem;
+}
+.sectionFormulario .formulario .btn {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 3rem;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+.footer {
+  background-color: #fff;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.footer p {
+  min-width: 15%;
+  margin-right: 4rem;
+  text-align: end;
+}
+.footer .linkFooter {
+  text-decoration: none;
+}
+.footer .grupoIconos {
+  margin-left: 4rem;
+  min-width: 15%;
+}
+.footer .grupoIconos .redIcono {
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.contienerConsulta {
+  min-height: 1vh;
+  height: 30rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.contienerConsulta .tituloConsulta {
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.contienerConsulta .btn-volver {
+  background-color: gold;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-mobile {
+    display: flex;
+  }
+  .listaMenu {
+    display: none;
+  }
+  .galeria {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
