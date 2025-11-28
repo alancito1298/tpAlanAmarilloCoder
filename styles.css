@@ -139,6 +139,10 @@ body {
 .galeria .itemFoto span {
   padding: 2rem;
 }
+.galeria .itemFoto img {
+  max-width: 100%;
+  height: 100%;
+}
 @media (max-width: 1280px) {
   .galeria {
     grid-template-columns: repeat(2, 1fr);
