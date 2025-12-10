@@ -244,7 +244,7 @@ body {
 }
 
 .contienerConsulta {
-  min-height: 1vh;
+  min-height: 90vh;
   height: 30rem;
   background-color: #fff;
   display: flex;
@@ -284,6 +284,19 @@ body {
   .navbar {
     align-items: center;
     justify-content: center;
+  }
+  .footer {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .grupoIconos {
+    margin-left: 0;
+  }
+  .footer p {
+    text-align: center;
+    margin-right: 0;
   }
 }
 @media only screen and (max-width: 1280px) {

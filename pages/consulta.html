@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../styles.css">
 
     <title>Document</title>
 </head>
@@ -17,11 +17,15 @@
         <nav class="navbar">
             <div class="logoConteiner">
                 <img class="logo" src="./img/LogoBits1.png">
-                <p class="nombreEncabezado">BITS3D</p>
+                    <a href="">
+                        <h1 class="nombreEncabezado">BITS3D</h1>
+                    </a>
             </div>
             <ul class="listaMenu">
-                <li><a href="/index.html">Inicio</a></li>
-    
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./#info">Acerca de</a></li>
+                <li><a href="#formulario">!Contáctanos!</a></li>
+
             </ul>
             <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
                 <div class="bg-dark p-4">
@@ -33,8 +37,8 @@
 
         </nav>
         <nav class="menu-mobile navbar  fixed-top">
-            <div class="container-fluid menu-mobile">
-                <a class="navbar-brand dark" href="#">BITS3D</a>
+            <h1 class="container-fluid menu-mobile">
+                <a class="navbar-brand dark" href="index.html">BITS3D</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                     aria-label="Toggle navigation">
@@ -49,56 +53,27 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Inicio
+                                <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#info">Acerca de
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#formulario">!Contáctanos!
                                 </a>
                             </li>
                     </div>
                 </div>
             </div>
         </nav>
-        
+    </header>
     <main>
-        <h2 class="tituloProductos">Productos</h2>
-        <section id="galeria"class="galeria">
-
-            <div class="itemFoto">
-                <img src="./img/articulos/vaso.png" alt="vasos chopp">
-                <span>vasos</span>
-            </div>
-            <div class="itemFoto">
-                <img src="./img/articulos/llaveros.png" alt="llaveros personalizados">
-                <span>llaveros</span>
-            </div>
-            <div class="itemFoto">
-                <img src="./img/articulos/Juguete.png" alt="Juguetes">
-                <span>juguetes</span>
-            </div>
-            <div class="itemFoto">
-                <img src="./img/articulos/Herramienta.png" alt="herramientas 3d">
-                <span>herramientas</span>
-            </div>
-            <div class="itemFoto">
-                <img src="./img/articulos/Maceta.png" alt="macetas 3d">
-                <span>macetas</span>
-            </div>
-            <div class="itemFoto">
-                <img src="./img/articulos/figura.png" alt="figuras 3d">
-                <span>figuras</span>
-            </div>
-            <div class="itemFoto">
-                <img src="./img/articulos/Lámpara.png" alt="lampara luna">
-                <span>lámparas</span>
-            </div>
-            <div class="itemFoto">
-                <img src="./img/articulos/cartelNeon.png" alt="Cartel neon">
-                <span>carteles</span>
-            </div>
-            <div class="itemFoto">
-                <img src="./img/articulos/juegos.png" alt="Trofeos">
-                <span>juegos</span>
-            </div>
+        <section class="contienerConsulta">
+            <h4 class="tituloConsulta">Consulta Enviada</h4>
+                <p class="respuestaConsulta">!Gracias Por Contactarnos, pronto obtendra una respuesta!</p>
+            <a class="btn-volver" href="/index.html">Volver al sitio </a>
         </section>
     </main>
    
